@@ -1,6 +1,7 @@
 # APUNTES
 12-09-2023
 <hr>
+& para agregar mas variables a la url por get
 
 ## para login
 - se agrega en el evento click del boton
@@ -183,4 +184,15 @@
 - el dropdownList debe activarse el autoPostBack
 
   [![image.png](https://i.postimg.cc/D0GdpnBn/image.png)](https://postimg.cc/2LzZVpsK)
-        
+
+## para imagenes
+- para obtener el texto usar SelectedItem
+
+        protected void ddlArtefacto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblPrecio.Text = ddlArtefacto.SelectedValue;
+            String imagen;
+            //para obtener el texto
+            imagen = ddlArtefacto.SelectedItem.Text;
+            imgArtefacto.ImageUrl = "~/imagenes/" + imagen + ".jpg";
+        }
