@@ -1,7 +1,9 @@
 # APUNTES
 12-09-2023
 <hr>
-& para agregar mas variables a la url por get
+
+- & para agregar mas variables a la url por get
+- Bootstrap: link rel="stylesheet" href="Content/bootstrap.min.css"
 
 ## para login
 - se agrega en el evento click del boton
@@ -195,4 +197,27 @@
             //para obtener el texto
             imagen = ddlArtefacto.SelectedItem.Text;
             imgArtefacto.ImageUrl = "~/imagenes/" + imagen + ".jpg";
+        }
+
+## para usar chetbox
+[![image.png](https://i.postimg.cc/XqsSzm3v/image.png)](https://postimg.cc/7JJWCB5v)
+
+        protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String nombre;
+            int index;
+            index = cblMeses.SelectedIndex;
+            nombre = "";
+
+            //List<string> meses = new List<string>();
+            foreach (ListItem item in cblMeses.Items)
+            {
+                if (item.Selected)
+                {
+                    //meses.Add(item.Value);
+                    nombre += item.Value + " - ";
+                }
+            }
+            //lblMes.Text = string.Join(" - ", meses);
+            lblMes.Text = nombre;
         }
