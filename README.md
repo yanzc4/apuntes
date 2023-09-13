@@ -221,3 +221,14 @@
             //lblMes.Text = string.Join(" - ", meses);
             lblMes.Text = nombre;
         }
+
+- forma 2
+
+            lblMes.Text = "";
+            for(int i=0; i<=cblMeses.Items.Count - 1; i++)
+            {
+                if (cblMeses.Items[i].Selected)
+                {
+                    lblMes.Text += cblMeses.Items[i].Value + "<br>";
+                }
+            }
