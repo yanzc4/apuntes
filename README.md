@@ -246,3 +246,9 @@
 
 [![image.png](https://i.postimg.cc/L5nfTb0T/image.png)](https://postimg.cc/RJxNCXm6)
 
+## para validar rango
+
+- tener en cuenta el typo maximo y minimo y el campo a validar
+
+[![image.png](https://i.postimg.cc/zX9D2GfW/image.png)](https://postimg.cc/xc3ScYMT)
+
