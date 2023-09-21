@@ -232,3 +232,17 @@
                     lblMes.Text += cblMeses.Items[i].Value + "<br>";
                 }
             }
+
+# APUNTES
+21-09-2023
+<hr>
+
+- para que funcionen los controles de validacion
+- se debe agregar en webconfig
+
+              <appSettings>
+                <add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
+              </appSettings>
+
+[![image.png](https://i.postimg.cc/L5nfTb0T/image.png)](https://postimg.cc/RJxNCXm6)
+
