@@ -276,4 +276,6 @@
 
 [![image.png](https://i.postimg.cc/VsR65LPt/image.png)](https://postimg.cc/qgN05rRB)
 
+## para usar ajax debemos poner un scripmanager
 
+[![image.png](https://i.postimg.cc/2SPnkdPT/image.png)](https://postimg.cc/Js5sKX7B)
