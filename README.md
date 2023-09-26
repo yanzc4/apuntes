@@ -252,3 +252,22 @@
 
 [![image.png](https://i.postimg.cc/zX9D2GfW/image.png)](https://postimg.cc/xc3ScYMT)
 
+## para validar rango de fechas
+
+-el codigo va en el boton
+
+[![image.png](https://i.postimg.cc/y65bB7gh/image.png)](https://postimg.cc/s1Yc4dJ1)
+
+            protected void Button1_Click(object sender, EventArgs e)
+        {
+            //RangeValidator1.MinimumValue = Convert.ToDateTime(txtLlegada.Text).ToShortDateString();
+            //RangeValidator1.MaximumValue = Convert.ToDateTime(txtSalida.Text).ToShortDateString();
+            if(txtLlegada.Text != string.Empty)
+            {
+                RangeValidator1.MinimumValue = txtLlegada.Text;
+                RangeValidator1.MaximumValue = txtSalida.Text;
+                RangeValidator1.Validate();
+            }  
+        }
+
+
