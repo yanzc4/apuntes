@@ -270,4 +270,10 @@
             }  
         }
 
+## para reemplazar por * el mensaje y en el validar sumary muestras los errores
+
+[![image.png](https://i.postimg.cc/mgY0jhZZ/image.png)](https://postimg.cc/215c8kBg)
+
+[![image.png](https://i.postimg.cc/VsR65LPt/image.png)](https://postimg.cc/qgN05rRB)
+
 
