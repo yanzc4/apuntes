@@ -299,3 +299,39 @@
                         </asp:AnimationExtender>
 
 ## animacion movimiento
+
+- Crear el style
+
+               <style type="text/css">
+
+                #Panel1
+                {
+                    position:absolute;
+                    padding:3px;
+                    background-color: #eeeeee;
+                    border:solid 1px black;
+                }
+            
+                </style>
+
+- Extender en el panel la siguiente animación
+
+            <asp:AnimationExtender ID="Panel1_AnimationExtender" runat="server"  Enabled="True" TargetControlID="Panel1">
+    
+                 <Animations>
+                        <OnLoad>
+                            <Sequence>
+                            <Move
+                                Horizontal="300"
+                                Vertical="300"
+                                Duration="1"
+                                Fps="20" />
+                            <FadeOut
+                                Duration="1"
+                                Fps="20" />
+                            </Sequence>
+                        </OnLoad>
+                        </Animations>
+                
+                </asp:AnimationExtender>
+
