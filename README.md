@@ -279,3 +279,23 @@
 ## para usar ajax debemos poner un scripmanager
 
 [![image.png](https://i.postimg.cc/2SPnkdPT/image.png)](https://postimg.cc/Js5sKX7B)
+
+## animacion cambiar color
+
+            <asp:AnimationExtender ID="lnkYellowFade_AnimationExtender" runat="server" Enabled="True" TargetControlID="lnkYellowFade">
+                        <Animations>
+                            <OnClick>
+                                <Sequence>
+                                    <Color
+                                        AnimationTarget="message"
+                                        Duration="0"
+                                        Property="style"
+                                        PropertyKey="backgroundColor"
+                                        StartValue="#fff666"
+                                        EndValue="#ffffff" />
+                                </Sequence>
+                            </OnClick>
+                        </Animations>
+                        </asp:AnimationExtender>
+
+## animacion movimiento
