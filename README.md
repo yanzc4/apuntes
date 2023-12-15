@@ -1,6 +1,45 @@
 # APUNTES
 12-09-2023
 <hr>
+- codigo para mapa
+
+            <!DOCTYPE html>
+            <html lang="es">
+              <head>
+                  <title>Leaflet-Grayscale</title>
+                  <meta charset="utf-8" />
+                  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"/>
+                <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+                  <style type="text/css">
+                  .leaflet-tile-loaded {
+                      filter: brightness(1) invert(1) grayscale(10);
+                  }
+                  .leaflet-container a {
+                    color: #000000;
+                  }
+                  .leaflet-container .leaflet-control-attribution {
+                    background: none;
+                    background-color: #fff;
+                  }
+                  body { margin:0; padding:0; }
+                  #map { position:absolute; top:0; bottom:0; width:100%; }
+                  </style>
+              </head>
+              <body>
+                <div id="map"></div>
+                <script>
+                  var map = L.map('map').
+                  setView([40.452173, -3.690662], 
+                  15);
+                  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                      attribution: 'Map data © <a href=""https://openstreetmap.org"">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+                      maxZoom: 18
+                  }).addTo(map);
+                  </script>
+              </body>
+            </html>
+
+<hr>
 
 - & para agregar mas variables a la url por get
 - Bootstrap: link rel="stylesheet" href="Content/bootstrap.min.css"
