@@ -41,6 +41,12 @@
 
 <hr>
 
+- mapas links
+
+https://mappinggis.com/2018/03/como-anadir-mapas-base-en-qgis-3-0-openstreetmap-google-carto-stamen/
+
+<hr>
+
 - & para agregar mas variables a la url por get
 - Bootstrap: link rel="stylesheet" href="Content/bootstrap.min.css"
 
